@@ -13,7 +13,7 @@ const raleway = Raleway({
 export default function SideNav() {
     return (
         <div className={`${raleway.className} flex flex-col w-[20%] mt-8`}>
-            <img src="./profile.png" className="relative z-40 justify-self-center self-center"/>
+            <img src="./profile.jpg" className="relative z-40 justify-self-center self-center rounded-lg w-[65%] h-[65%]"/>
             <div className="fixed bg-[#1a0b2e3e] rounded-lg top-[220px] p-4 overflow-y-auto w-[20%]">
                 <div className="flex flex-col items-center justify-center rounded-lg bg-opacity-40 gap-2">
                     <div className={`flex max-xl:hidden mt-24 p-3 mr-4 ml-4 text-center flex-col gap-2 pb-4`}>
@@ -27,7 +27,7 @@ export default function SideNav() {
                         <Link href="https://github.com/anandlunawat" className="bg-[#251C31] border-[2px] text-2xl rounded-lg p-3 border-[#251C31]">                           
                             <FaGithub />
                         </Link>                         
-                        <Link href={"/"} className="bg-[#251C31] border-[2px] text-2xl rounded-lg p-3 border-[#251C31]">                           
+                        <Link href={"https://www.instagram.com/anand__lunawat/?hl=en"} className="bg-[#251C31] border-[2px] text-2xl rounded-lg p-3 border-[#251C31]">                           
                             <FaInstagram />
                         </Link>         
                     </div>
