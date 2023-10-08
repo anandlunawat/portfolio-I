@@ -1,7 +1,15 @@
+import SideNav from '@/components/SideNav'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { Pacifico } from "next/font/google"
+import {IoMoonOutline} from "react-icons/io5"
 
+const pacifico = Pacifico({
+    weight: "400",
+    display: "swap",
+    preload: false
+});
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -16,7 +24,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} m-10`}>
+          <div className={`${pacifico.className} flex flex-row w-full`}>
+            <div className='tracking-widest font-normal text-4xl basis-1/2'>Anand Lunawat</div>
+            <div className='ml-auto rounded-full p-3 text-lg border-[2px]'><IoMoonOutline /></div>
+          </div>
+          <SideNav />
+        {children}
+      </body>
     </html>
   )
 }
