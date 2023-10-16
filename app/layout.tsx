@@ -1,9 +1,11 @@
-import SideNav from '@/components/SideNav'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { Pacifico } from "next/font/google"
 import {IoMoonOutline} from "react-icons/io5"
+import Profile from '@/components/Profile'
+import Navbar from '@/components/Navbar'
+import Link from 'next/link'
 
 const pacifico = Pacifico({
     weight: "400",
@@ -24,13 +26,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} m-10`}>
+      <body className={`${inter.className} m-4 lg:overflow-hidden`}>
           <div className={`${pacifico.className} flex flex-row w-full`}>
-            <div className='tracking-widest font-normal text-4xl basis-1/2'>Anand Lunawat</div>
+            <Link href={"/"} className='tracking-widest font-normal text-2xl 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
             <div className='ml-auto rounded-full p-3 text-lg border-[2px]'><IoMoonOutline /></div>
           </div>
-          <SideNav />
-        {children}
+          <div className='flex gap-4 flex-row'>
+            <Profile />
+            <div className='flex flex-col w-full'>
+              <Navbar />
+              {children}
+            </div>            
+          </div>                  
       </body>
     </html>
   )
