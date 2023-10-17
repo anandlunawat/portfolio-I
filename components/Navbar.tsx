@@ -6,9 +6,9 @@ export default function Navbar() {
             <Link href={"/about"} className="bg-[#E1E8EF] border-[2px] 2xl:text-lg font-semibold rounded-lg p-3 border-[#F2F7FC]">
                 <span>About</span>
             </Link>
-            <button className="bg-[#E1E8EF] border-[2px] 2xl:text-lg font-semibold rounded-lg p-3 border-[#F2F7FC]">
+            <Link href={"/resume"} className="bg-[#E1E8EF] border-[2px] 2xl:text-lg font-semibold rounded-lg p-3 border-[#F2F7FC]">
                 <span>Resume</span>
-            </button>
+            </Link>
             <button className="bg-[#E1E8EF] border-[2px] 2xl:text-lg font-semibold rounded-lg p-3 border-[#F2F7FC]">
                 <span>Contact Me</span>
             </button>

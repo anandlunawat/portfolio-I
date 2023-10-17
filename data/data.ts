@@ -1,18 +1,15 @@
 import {SiCplusplus, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTypescript, SiCss3, SiBootstrap, SiChakraui, SiTailwindcss, SiNodedotjs, SiExpress, SiDjango, SiGithub, SiMysql, SiAdobephotoshop, SiFigma } from 'react-icons/si'
+import {BiLogoNetlify} from "react-icons/bi"
 import { DiJava } from 'react-icons/di'
 import { IconType } from 'react-icons';
 
-interface mySkills {    
-    component: IconType;
-    name: string;
-}
-
-const icons: IconType[] = [SiCplusplus, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTypescript, SiCss3, SiBootstrap, SiChakraui, SiTailwindcss, SiNodedotjs, SiExpress, SiDjango, SiGithub, SiMysql, SiAdobephotoshop, SiFigma, DiJava];
+const icons: IconType[] = [SiCplusplus, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTypescript, SiCss3, SiBootstrap, SiChakraui, SiTailwindcss, SiNodedotjs, SiExpress, SiDjango, SiGithub, SiMysql, SiAdobephotoshop, SiFigma, DiJava, SiMysql, BiLogoNetlify];
 
 const skills = [
     {                
         component : SiCplusplus,
-        name : "C++"        
+        name : "C++" ,
+        color : "#044F88"       
     },
     // {
     //     component : DiJava,
@@ -20,19 +17,23 @@ const skills = [
     // },
     {
         component : SiHtml5,
-        name : "HTML5"
+        name : "HTML5",
+        color : "#f06529"       
     },
     {
         component : SiCss3,
-        name : "CSS3"
+        name : "CSS3",
+        color : "0295DF"
     },
     {
         component : SiTailwindcss,
-        name : "Tailwind"
+        name : "Tailwind",
+        color : "#38B2AC"
     },
     {
         component : SiBootstrap,
-        name : "Bootstrap"
+        name : "Bootstrap",
+        color : "#673AB7"
     },    
     // {
     //     component : SiChakraui,
@@ -40,47 +41,62 @@ const skills = [
     // },        
     {
         component : SiJavascript,
-        name : "JavaScript"
+        name : "JavaScript",
+        color : "#FFD600"
     },        
     {
         component : SiTypescript,
-        name : "TypeScript"
+        name : "TypeScript",
+        color : "#007acc"
     },
     {
         component : SiNextdotjs,
-        name : "NextJs"
+        name : "NextJs",
+        color : "#000000"
     },   
     {
         component : SiReact,
-        name : "ReactJs"
+        name : "ReactJs",
+        color : "#80DEEA"
     },    
     {
         component : SiNodedotjs,
-        name : "NodeJs"
+        name : "NodeJs",
+        color : "#54A245"
     },           
     {
         component : SiExpress,
-        name : "ExpressJs"
+        name : "ExpressJs",
+        color : "#000000"
     }, 
     // {
     //     component : SiDjango,
     //     name : "Django"
     // },  
-    // {
-    //     component : SiMysql,
-    //     name : "MySql"
-    // },
+    {
+        component : SiMysql,
+        name : "MySql",
+        color : "#038388"
+    },
     {
         component : SiGithub,
-        name : "Github"
+        name : "Github",
+        color : "#000000"
     },         
     {
         component : SiAdobephotoshop,
-        name : "Adobe Photoshop"
+        name : "Photoshop",
+        color : "#3C327B"
     },         
     {
         component : SiFigma,
-        name : "Figma"
+        name : "Figma",
+        color : "#ff7262"
+    },     
+    {
+        component : BiLogoNetlify,
+        name : "Netlify",
+        color : "#25C7B7"
     },         
 ]
 

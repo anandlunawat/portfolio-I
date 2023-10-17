@@ -26,15 +26,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} m-4 lg:overflow-hidden`}>
+      <body className={`${inter.className} m-2 lg:overflow-hidden`}>
           <div className={`${pacifico.className} flex flex-row w-full`}>
             <Link href={"/"} className='tracking-widest font-normal text-2xl 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
             <div className='ml-auto rounded-full p-3 text-lg border-[2px]'><IoMoonOutline /></div>
           </div>
-          <div className='flex gap-4 flex-row'>
-            <Profile />
-            <div className='flex flex-col w-full'>
-              <Navbar />
+          <div className='flex flex-col gap-4'>
+            <Navbar />
+            <div className='flex gap-4 flex-row w-full'>
+              <Profile />
               {children}
             </div>            
           </div>                  
