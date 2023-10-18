@@ -13,7 +13,7 @@ const raleway = Raleway({
 
 export default function Profile() {
     return (
-        <div className={`${raleway.className}fixed flex flex-col h-[75vh] w-[25%] 2xl:w-[30%]`}>
+        <div className={`${raleway.className}fixed max-md:hidden flex flex-col h-[75vh] w-[25%] 2xl:w-[30%]`}>
             <img src="./profile.jpg" className="justify-self-center absolute top-[12%] self-center rounded-xl w-[12%] h-[24%] 2xl:w-[14%] 2xl:h-[28%]" />
             <div className="flex flex-col items-center justify-center rounded-lg bg-opacity-40 gap-2 bg-[#ffff] overflow-hidden h-full p-4">
                 <div className={`flex mr-4 ml-4 mt-[40%] text-center flex-col gap-2`}>

@@ -33,7 +33,7 @@ export default function RootLayout({
           </div>
           <div className='flex flex-col gap-4'>
             <Navbar />
-            <div className='flex gap-4 flex-row w-full'>
+            <div className='flex max-md:h-full gap-4 flex-row w-full'>
               <Profile />
               {children}
             </div>            
