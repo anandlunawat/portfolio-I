@@ -1,9 +1,11 @@
 'use client'
 
 import { PiGraduationCap } from "react-icons/pi"
+import {FiExternalLink} from "react-icons/fi"
 import educationData from "../data/education"
 import experiences from "@/data/experiences";
 import { Chrono } from "react-chrono";
+import Link from "next/link";
 
 interface prop {
   type: string
@@ -34,7 +36,7 @@ export default function Timeline(props: prop) {
         return (
           <div key={index} className="VerticalItemWrapper-sc-1467v1d-1 uhss left vertical-item-row visible">
             <div className="flex flex-col gap-4 ">
-              <p className="text-[#0072b1] text-base font-semibold text-left">{experience.companyName}</p>
+              <p className="text-[#0072b1] flex items-center text-base font-semibold text-left">{experience.companyName}<Link href={experience.href} className="ml-auto"><FiExternalLink /></Link></p>
               <p className="text-black text-sm font-semibold text-left">{experience.role}</p>
               <p className="text-sm font-normal">{experience.para1}</p>
               <p className="text-sm font-normal">{experience.para2}</p>
@@ -46,9 +48,6 @@ export default function Timeline(props: prop) {
                 })}
               </div>
             </div>
-            {/* <div className="absolute -right-[50%] TimelineTitleWrapper-sc-1427v1d-3 bTBgMV left">
-              <div className="TitleWrapper-sc-13izrht-0 eMDZDE timeline-item-title active rc-title">{experience.title}</div>
-            </div> */}
           </div>
         )
       }) : <div className="chrono-icons"><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /></div>}
