@@ -6,7 +6,6 @@ import { IoLocationOutline } from "react-icons/io5"
 import { AiOutlineDownload } from "react-icons/ai"
 
 const raleway = Raleway({
-    weight: "400",
     display: "swap",
     preload: false
 });

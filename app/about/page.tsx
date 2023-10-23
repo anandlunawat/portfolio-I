@@ -3,7 +3,7 @@ import Timeline from "@/components/Timeline";
 
 
 const poppins = Poppins({
-    weight: "400",
+    weight: "500",
     display: "swap",
     preload: false
 });

@@ -15,7 +15,7 @@ export default function ProjectCards() {
                 projects.map((project, index) => {
                     return (
                         <div key={index} className={`bg-[#E1E8EF] items-center justify-center h-full flex flex-col rounded-lg pb-2 shadow-xl ${raleway.className}`}>
-                            <img src={project.imgUrl} alt={project.imgUrl} className="h-[180px] w-full"/>
+                            <img src={project.imgUrl} alt={project.imgUrl} className="h-[180px] rounded-t-lg w-full"/>
                             <span className={`text-2xl font-bold pt-2 text-[#0072b1]`}>{project.title}</span>
                             <span className={`text-xs text-center p-2`}>{project.description}</span>
                             <div className="flex flex-wrap gap-2 mt-auto justify-center p-1 w-[95%]">

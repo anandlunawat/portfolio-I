@@ -3,13 +3,12 @@ import skills from "@/data/data";
 
 
 const poppins = Poppins({
-    weight: "400",
+    weight: "500",
     display: "swap",
     preload: false
 });
 
-const raleway = Raleway({
-    weight: "400",
+const raleway = Raleway({    
     display: "swap",
     preload: false
 });

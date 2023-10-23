@@ -16,12 +16,20 @@ const projects = [
         "deployedLink" : "https://virtrade.netlify.app/staking"
     },
     {
+        "imgUrl" : "./iCric.png",
+        "title" : "iCric",
+        "description" : "The iCric Live Score Display is a dynamic web application designed to provide real-time updates of a local indoor cricket match taking place in England.Through a user-friendly interface, the application offers a comprehensive display of live scores, team performances and player statistics.",
+        "techStacks" : ["React JS", "Tailwind"],
+        "repoLink" : "https://github.com/anandlunawat/iCric",
+        "deployedLink" : "https://icric.netlify.app/"
+    },
+    {
         "imgUrl" : "./travendo.png",
         "title" : "Travendo",
         "description" : "It is a platform for village and local vendors to sell their authentic products. It is an initiative to promote “Made in Village” products.",
-        "techStacks" : ["ExpressJS", "MongodB", "NodeJS", "ReactJS", "Redux","MaterialUI"],
-        "repoLink" : "https://github.com/anandlunawat/VirTrade",
-        "deployedLink" : "https://virtrade.netlify.app/staking"
+        "techStacks" : ["Express JS", "MongodB", "Node JS", "React JS", "Redux","MaterialUI"],
+        "repoLink" : "https://github.com/PRATHAM2002-DS/travendo-frontend",
+        "deployedLink" : "https://github.com/PRATHAM2002-DS/travendo-frontend"
     }
 ]
 

@@ -12,3 +12,28 @@ body {
   color: white;
   background-color: black;
 }
+
+
+html {
+  scroll-behavior: smooth;
+  /* cursor: url("/cursor.svg"), auto; */
+
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #919696;
+  border-radius: 10px;
+
+}
