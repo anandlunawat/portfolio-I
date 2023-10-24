@@ -20,7 +20,7 @@ export default function Home() {
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Bio</span>
             <span className={`${raleway.className} text-lg font-medium`}>I am a Electronics and Telecommunication Engineering Undergraduate at Pune Institute of Computer Technology with a keen interest in the field of  Web Development, UI UX Development and Graphic Designing.</span>
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Skills</span>
-            <div className='grid grid-cols-7 gap-6 text-lg font-medium max-lg:grid-cols-4'>
+            <div className='grid grid-cols-7 gap-6 text-lg font-medium max-lg:grid-cols-4 max-md:grid-cols-2'>
                 {
                     skills.map((skill,index) => {
                         const Component = skill.component;
