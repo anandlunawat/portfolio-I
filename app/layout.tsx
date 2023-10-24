@@ -26,10 +26,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      {/* <Head>
-        <link rel="icon" type='image/jpg' href='./favicon.ico'/>
-      </Head>       */}
+    <html lang="en">      
       <body className={`${inter.className} m-2 lg:overflow-hidden`}>
           <div className={`${pacifico.className} flex flex-row w-full`}>
             <Link href={"/"} className='tracking-widest whitespace-pre font-normal text-2xl 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
