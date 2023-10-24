@@ -6,6 +6,7 @@ import {IoMoonOutline} from "react-icons/io5"
 import Profile from '@/components/Profile'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
+import Head from 'next/head'
 
 const pacifico = Pacifico({
     weight: "400",
@@ -26,9 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      {/* <Head>
         <link rel="icon" type='image/jpg' href='./favicon.ico'/>
-      </head>      
+      </Head>       */}
       <body className={`${inter.className} m-2 lg:overflow-hidden`}>
           <div className={`${pacifico.className} flex flex-row w-full`}>
             <Link href={"/"} className='tracking-widest whitespace-pre font-normal text-2xl 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
