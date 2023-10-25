@@ -1,9 +1,8 @@
 import { Raleway } from "next/font/google"
 import Link from "next/link";
-import { FaLinkedinIn, FaInstagram, FaGithub, FaPhone } from "react-icons/fa"
-import { BiLogoGmail } from "react-icons/bi"
+import { FaLinkedinIn, FaInstagram, FaGithub, } from "react-icons/fa"
 import { IoLocationOutline } from "react-icons/io5"
-import { AiOutlineDownload } from "react-icons/ai"
+import { AiOutlineDownload, AiOutlinePlus } from "react-icons/ai"
 import { FcPhone } from "react-icons/fc"
 
 const raleway = Raleway({
@@ -31,16 +30,15 @@ export default function Profile() {
                         <FaInstagram style={{ color: "#fa7e1e" }} />
                     </Link>
                 </div>
-                {/* <div className="flex flex-col p-2 bg-[#1A0B2E] m-2 w-full rounded-lg"> */}
                 <div className="flex flex-col p-2 bg-[#f2f5f9] 2xl:m-2 w-full rounded-lg">
-                    <div className="flex pl-3 flex-row border-b-[1px] border-b-[#CDCDCD] py-1 2xl:py-2 items-center gap-4 w-full">
+                    <Link href="tel:+918390854549" className="flex pl-3 flex-row border-b-[1px] border-b-[#CDCDCD] py-1 2xl:py-2 items-center gap-4 w-full">
                         <FcPhone />
                         <div className="flex font-semibold text-sm flex-col">
                             <span className="text-[#1a100396]">Phone</span>
                             <span>+918390854549</span>
                         </div>
-                    </div>
-                    <div className="flex pl-3 flex-row border-b-[1px] border-b-[#CDCDCD] py-1 2xl:py-2 items-center gap-4 w-full">
+                    </Link>
+                    <Link href="mailto:aplunawat@gmail.com" className="flex pl-3 flex-row border-b-[1px] border-b-[#CDCDCD] py-1 2xl:py-2 items-center gap-4 w-full">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 48 48">
                             <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
                         </svg>
@@ -48,7 +46,7 @@ export default function Profile() {
                             <span className="text-[#1a100396]">Email</span>
                             <span>aplunawat@gmail.com</span>
                         </div>
-                    </div>
+                    </Link>
                     <div className="flex pl-3 flex-row border-b-[1px] border-b-[#CDCDCD] py-1 2xl:py-2 items-center gap-4 w-full">
                         <IoLocationOutline style={{ color: "#9bbff4" }} />
                         <div className="flex font-semibold text-sm flex-col">
@@ -62,6 +60,9 @@ export default function Profile() {
                     </Link>
                 </div>
             </div>
+            {/* <button className="">
+                <AiOutlinePlus />
+            </button>             */}
         </div>
     )
 }
