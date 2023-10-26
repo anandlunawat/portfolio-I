@@ -18,7 +18,7 @@ export default function Profile() {
     const [floatingButton, setFloatingButton] = useState(false)
 
     return (
-        <div className={`${raleway.className}fixed max-lg:fixed flex flex-col right-2 bottom-2 lg:h-[75vh] lg:w-[25%] 2xl:w-[30%]`}>
+        <div className={`${raleway.className}fixed max-lg:fixed flex flex-col right-2 bottom-16 lg:h-[75vh] lg:w-[25%] 2xl:w-[30%]`}>
             {
                 floatingButton && <div className="flex gap-6 lg:hidden flex-col">
                     <Link href="https://www.linkedin.com/in/anand-lunawat-aa220622b/" className="p-3">
