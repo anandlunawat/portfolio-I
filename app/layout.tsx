@@ -47,9 +47,7 @@ export default function RootLayout({
           <Navbar />
           <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            <div className='-z-20'>
-              {children}
-            </div>            
+            {children}
           </div>
         </div>
       </body>
