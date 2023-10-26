@@ -6,7 +6,6 @@ import { IoMoonOutline } from "react-icons/io5"
 import Profile from '@/components/Profile'
 import Navbar from '@/components/Navbar'
 import Link from 'next/link'
-import Head from 'next/head'
 import Script from 'next/script'
 
 const pacifico = Pacifico({
@@ -46,9 +45,11 @@ export default function RootLayout({
         </div>
         <div className='flex flex-col gap-4'>
           <Navbar />
-          <div className='flex max-md:h-full gap-4 flex-row w-full'>
+          <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            {children}
+            <div className='-z-20'>
+              {children}
+            </div>            
           </div>
         </div>
       </body>
