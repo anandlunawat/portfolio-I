@@ -24,6 +24,7 @@ html {
 /* width */
 ::-webkit-scrollbar {
   width: 7px;
+  height: 1px;
 }
 
 /* Track */
@@ -35,5 +36,4 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #919696;
   border-radius: 10px;
-
 }
