@@ -1,4 +1,3 @@
-'use client'
 import { Poppins, Raleway } from "next/font/google"
 import Timeline from "@/components/Timeline";
 
