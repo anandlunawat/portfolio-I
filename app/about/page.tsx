@@ -17,7 +17,7 @@ const raleway = Raleway({
 
 export default function About() {
     return (
-        <div className="overflow-y-auto gap-3 w-full bg-white h-[75vh] 2xl:w-[70%] rounded-lg p-3 flex flex-col">
+        <div className="overflow-y-auto gap-3 w-full h-[75vh] 2xl:w-[70%] rounded-lg p-3 flex flex-col">
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Education</span>
             <div className="h-fit max-md:w-fit">
                 <Timeline type={"education"}/>

@@ -2,24 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-  background-color: #F2F5F9;  
+  /* background-color: #F2F5F9;   */
   /* color: white;  */
 }
-
-::selection {
-  color: white;
-  background-color: black;
-}
-
 
 html {
   scroll-behavior: smooth;
   /* cursor: url("/cursor.svg"), auto; */
-
 }
-
 
 /* width */
 ::-webkit-scrollbar {
@@ -36,4 +27,58 @@ html {
 ::-webkit-scrollbar-thumb {
   background: #919696;
   border-radius: 10px;
+}
+
+.dark-mode {
+  background: linear-gradient(360deg, #150225 0%, #171732 100%);
+  background-color: rgba(37, 28, 59, 0.3);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(12px); 
+  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  color: white;
+  --shadow-color: #8c4af063
+}
+
+.dark-mode ::selection {
+  color: black;
+  background-color: white;
+}
+
+.dark-mode .shadow-custom {
+  box-shadow:
+    0 4px 10px var(--shadow-color),
+    0 2px 4px var(--shadow-color);
+}
+
+.dark-mode .skills {
+  transition: box-shadow 0.3s ease;
+}
+
+.dark-mode .skills:hover {
+  box-shadow: 1px 1px 2px 1px #8c4af0, 0px 1px 0px -6px #8c4af0;
+}
+
+.light-mode {
+  background: white;
+  color: black;
+  --shadow-color: #00000052
+}
+
+.light-mode .shadow-custom {
+  box-shadow:
+    0 4px 10px var(--shadow-color),
+    0 2px 4px var(--shadow-color);
+}
+
+.light-mode ::selection {
+  color: white;
+  background-color: black;
+}
+
+.light-mode .skills {
+  transition: box-shadow 0.3s ease;
+}
+
+.light-mode .skills:hover {
+  box-shadow: 2px 3px 2px -1px #000000, 0 2px 2px -1px #000000;
 }

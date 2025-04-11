@@ -43,7 +43,7 @@ export default function Timeline(props: prop) {
               <div className="flex flex-row gap-4 text-sm font-normal">
                 {experience.techStacks.map((techStack, index) => {
                   return (
-                    <div key={index} className="bg-white rounded-lg p-2 ">{techStack}</div>
+                    <div key={index} className=" rounded-lg p-2 ">{techStack}</div>
                   )
                 })}
               </div>
@@ -65,7 +65,7 @@ export default function Timeline(props: prop) {
 //     <p className="text-black text-sm font-semibold text-left">{experience.role}</p>
 //     <p className="text-sm font-normal">{experience.para1}</p>
 //     <p className="text-sm font-normal">{experience.para2}</p>
-//     <div className="flex flex-row gap-4 text-sm font-normal"><div className="bg-white rounded-lg p-2 ">ReactJS</div><div className="bg-white rounded-lg p-2 ">Tailwind</div></div>
+//     <div className="flex flex-row gap-4 text-sm font-normal"><div className=" rounded-lg p-2 ">ReactJS</div><div className=" rounded-lg p-2 ">Tailwind</div></div>
 //   </div>
 //   })
 //: <div className="chrono-icons"><PiGraduationCap style={{background : "white",color : "black",fontSize : "50px"}}/><PiGraduationCap style={{background : "white",color : "black",fontSize : "50px"}}/><PiGraduationCap style={{background : "white",color : "black",fontSize : "50px"}}/></div>

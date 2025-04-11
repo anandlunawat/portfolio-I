@@ -14,7 +14,7 @@ export default function ProjectCards() {
             {
                 projects.map((project, index) => {
                     return (
-                        <div key={index} className={`bg-[#E1E8EF] items-center justify-center h-full flex flex-col rounded-lg pb-2 shadow-xl ${raleway.className}`}>
+                        <div key={index} className={` items-center justify-center h-full flex flex-col rounded-lg pb-2 pt-1 shadow-custom ${raleway.className}`}>
                             <img src={project.imgUrl} alt={project.imgUrl} className="h-[180px] rounded-t-lg w-full"/>
                             <span className={`text-2xl font-bold pt-2 text-[#0072b1]`}>{project.title}</span>
                             <span className={`text-xs text-center p-2`}>{project.description}</span>
@@ -22,14 +22,14 @@ export default function ProjectCards() {
                                 {
                                     project.techStacks.map((techStack,index)=>{
                                         return (
-                                            <div key={index} className={`bg-white whitespace-pre rounded-lg p-2`}>{techStack}</div>                                 
+                                            <div key={index} className={` whitespace-pre rounded-lg p-2`}>{techStack}</div>                                 
                                         )
                                     })
                                 }                                
                             </div>
                             <div className="flex gap-10 mt-auto border-t-2 border-white w-[95%] justify-center items-center p-2">
-                                <Link href={project.repoLink} className="rounded-full bg-white p-2 border-[1px] border-white"><BsCodeSlash /></Link>
-                                <Link href={project.deployedLink} className="rounded-full bg-white p-2 border-[1px] border-white"><BsFillRocketTakeoffFill /></Link>
+                                <Link href={project.repoLink} className="rounded-full  p-2 border-[1px] border-white"><BsCodeSlash /></Link>
+                                <Link href={project.deployedLink} className="rounded-full  p-2 border-[1px] border-white"><BsFillRocketTakeoffFill /></Link>
                             </div>
                         </div>
                     )
