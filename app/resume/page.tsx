@@ -8,9 +8,9 @@ const poppins = Poppins({
 
 export default function Resume() {
     return (
-        <div className="w-full flex flex-col gap-3 rounded-lg">            
+        <div className="w-full flex flex-col gap-3 rounded-lg p-3">            
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Resume</span>
-            <iframe title="Anand Lunawat | Resume" className="w-full rounded-lg overflow-y-auto h-full " src="https://drive.google.com/file/d/17gITpRlSwimM7RQzmxL81dXckCBzEsuS/preview"></iframe>
+            <iframe title="Anand Lunawat | Resume" className="w-full lg:h-[70vh] h-[60vh] rounded-lg" src="https://drive.google.com/file/d/17gITpRlSwimM7RQzmxL81dXckCBzEsuS/preview"></iframe>
         </div>
     )
 }

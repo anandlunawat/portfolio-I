@@ -36,7 +36,7 @@ export default function RootLayout({
           <Navbar />
           <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            <div className="max-h-screen lg:max-h-[80vh] overflow-y-auto">
+            <div className="max-h-screen w-full pb-24 lg:max-h-[80vh] overflow-y-auto">
               {children}
             </div>
           </div>
