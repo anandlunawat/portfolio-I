@@ -55,7 +55,6 @@ html {
 }
 
 .light-mode {
-  background: linear-gradient(to bottom left, #9ddced93, #67adf053,#9ddced75);
   color: black;
   --shadow-color: #00000052
 }
