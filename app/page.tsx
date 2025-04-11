@@ -16,7 +16,7 @@ const raleway = Raleway({
 
 export default function Home() {
     return (
-        <div className="overflow-y-auto gap-3 h-[75vh] 2xl:w-[70%] rounded-lg p-3 flex flex-col">
+        <div className="overflow-y-auto gap-3 rounded-lg p-3 flex flex-col">
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Bio</span>
             <span className={`${raleway.className} text-lg font-medium`}>I am a Electronics and Telecommunication Engineering Undergraduate at Pune Institute of Computer Technology with a keen interest in the field of  Web Development, UI UX Development and Graphic Designing.</span>
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Skills</span>

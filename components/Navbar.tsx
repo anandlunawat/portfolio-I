@@ -33,9 +33,9 @@ export default function Navbar() {
     return (
         <div className="flex flex-row items-center w-full 2xl:mt-4 gap-4">
             <div className={`${pacifico.className} basis-1/2`}>
-                <Link href={"/"} className='tracking-widest whitespace-pre font-normal text-md 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
+                <Link href={"/"} className='tracking-widest whitespace-pre font-normal lg:text-2xl text-md 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
             </div>
-            <div className="flex gap-1 max-md:gap-2 basis-1/3 ml-auto w-full">
+            <div className="flex max-md:gap-2 basis-1/3 ml-auto w-full">
                 <Link href={"/"} className="text-center md:shadow-xl 2xl:text-lg ml-auto md:font-medium max-md:text-[14px] font-semibold rounded-lg sm:p-2">
                     Home
                 </Link>
@@ -48,12 +48,12 @@ export default function Navbar() {
                 <Link href={"/resume"} className="text-center md:shadow-xl max-md:text-[14px] ml-auto 2xl:text-lg md:font-medium font-semibold rounded-lg sm:p-2">
                     <span>Resume</span>
                 </Link>
-            </div>
             <button onClick={executeDarkMode} className='ml-auto rounded-full p-3 text-lg'>
                 {
                     !darkMode ? <IoMoonOutline /> : <MdOutlineWbSunny />
                 }
             </button>
+            </div>
         </div>
     )
 }

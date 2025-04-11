@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
 
   return (
-    <html lang="en" className='light-mode'>
+    <html lang="en" className='light-mode fixed w-[100vw] h-[100vh]'>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-L678VG62DJ"></Script>
       <Script id="google-analytics">
         {
@@ -31,12 +31,14 @@ export default function RootLayout({
           `
         }
       </Script>
-      <body className={`${inter.className} m-2 lg:overflow-hidden`}>
-        <div className='flex flex-col gap-4'>
+      <body className={`${inter.className} fixed w-[100vw] h-[100vh] lg:overflow-hidden`}>
+        <div className='flex flex-col p-4 gap-4'>
           <Navbar />
           <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            {children}
+            <div className='h-[80vh] overflow-y-scroll'>
+              {children}
+            </div>
           </div>
         </div>
       </body>
