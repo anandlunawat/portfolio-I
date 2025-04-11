@@ -18,7 +18,7 @@ export default function Profile() {
     const [floatingButton, setFloatingButton] = useState(false)
 
     return (
-        <div className={`${raleway.className}fixed max-lg:fixed flex flex-col right-2 bottom-16 lg:h-fit lg:w-[25%] 2xl:w-[30%]`}>
+        <div className={`${raleway.className}fixed z-50 max-lg:fixed flex flex-col right-2 bottom-16 lg:h-fit lg:w-[25%] 2xl:w-[30%]`}>
             {
                 floatingButton && <div className="flex gap-6 lg:hidden flex-col">
                     <Link href={"https://docs.google.com/uc?export=download&id=17gITpRlSwimM7RQzmxL81dXckCBzEsuS"} className="flex self-center justify-self-center mt-4 items-center rounded-full gap-4">
@@ -43,13 +43,13 @@ export default function Profile() {
                     </Link>                    
                 </div>
             }
-            <button onClick={() => { setFloatingButton(!floatingButton) }} className="rounded-full lg:hidden absolute right-2 bottom-2 w-fit mt-auto  p-2 border-2">
+            <button onClick={() => { setFloatingButton(!floatingButton) }} className="rounded-full lg:hidden fixed z-50 right-2 bottom-2 w-fit mt-auto  p-2 border-2">
                 <AiOutlinePlus />
             </button>
             {/* <img src="./profile.jpg" className="justify-self-center max-lg:hidden absolute top-[12%] self-center rounded-xl w-[12%] h-[24%] 2xl:w-[14%] 2xl:h-[28%]" /> */}
             <div className="flex flex-col items-center justify-center rounded-lg max-lg:hidden bg-opacity-40 gap-2 overflow-hidden h-full p-4">
                 <div className={`flex mr-4 ml-4 text-center flex-col gap-2`}>
-                    <img src="./profile.jpg" className="rounded-full"/>
+                    <img src="./profile.jpg" className="rounded-full xl:w-[200px] xl:h-[200px]"/>
                     <span className={`font-medium ${raleway.className} text-center gap-4 text-[17px] 2xl:text-base`}>FullStack Developer</span>
                 </div>
                 <div className="flex flex-row gap-2 ml-4 2xl:gap-4">
