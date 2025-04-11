@@ -31,12 +31,12 @@ export default function RootLayout({
           `
         }
       </Script>
-      <body className={`${inter.className} fixed w-[100vw] h-[100vh] lg:overflow-hidden`}>
+      <body className={`${inter.className} fixed children w-[100vw] h-[100vh] lg:overflow-hidden`}>
         <div className='flex flex-col p-4 gap-4'>
           <Navbar />
           <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            <div className="max-h-screen w-full pb-24 lg:max-h-[80vh] overflow-y-auto">
+            <div className="max-h-screen w-full children pb-44 lg:max-h-[80vh] overflow-y-auto">
               {children}
             </div>
           </div>

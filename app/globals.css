@@ -14,29 +14,25 @@ html {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 7px;
-  height: 1px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #ffffff;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #919696;
-  border-radius: 10px;
+  width: 0px;
+  height: 0px;
 }
 
 .dark-mode {
-  background: linear-gradient(360deg, #150225 0%, #171732 100%);
-  background-color: rgba(37, 28, 59, 0.3);
+  background: linear-gradient(to bottom left, #292136, #120e1c);
+  /* --shadow-color: #8c4af063; */
+  color: white
+}
+
+.dark-mode .children {
+  background: linear-gradient(to bottom left, #292136, #120e1c);
+  background-color: rgba(18, 14, 28, 0.3); /* transparent dark fallback */
   backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(12px); 
-  box-shadow: 0 4px 20px rgb(0, 0, 0);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
   color: white;
-  --shadow-color: #8c4af063
 }
 
 .dark-mode ::selection {
@@ -59,9 +55,18 @@ html {
 }
 
 .light-mode {
-  background: white;
+  background: linear-gradient(to bottom left, #9ddced93, #67adf053,#9ddced75);
   color: black;
   --shadow-color: #00000052
+}
+
+.light-mode .children {
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .light-mode .shadow-custom {
