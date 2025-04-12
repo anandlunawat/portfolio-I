@@ -4,6 +4,9 @@ import { Inter } from 'next/font/google'
 import Profile from '@/components/Profile'
 import Navbar from '@/components/Navbar'
 import Script from 'next/script'
+import About from '@/components/About'
+import Resume from '@/components/Resume'
+import Projects from '@/components/Projects'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -38,6 +41,9 @@ export default function RootLayout({
             <Profile />
             <div className="max-h-screen w-full children pb-44 lg:max-h-[80vh] overflow-y-auto">
               {children}
+              <Projects />
+              <About />
+              <Resume />
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import { Raleway } from "next/font/google"
+import { Pacifico, Raleway } from "next/font/google"
 import Link from "next/link";
 import { FaLinkedinIn, FaInstagram, FaGithub, } from "react-icons/fa"
 import { IoLocationOutline } from "react-icons/io5"
@@ -13,12 +13,19 @@ const raleway = Raleway({
     preload: false
 });
 
+const pacifico = Pacifico({
+    weight: "400",
+    display: "swap",
+    preload: false
+});
+
+
 export default function Profile() {
 
     const [floatingButton, setFloatingButton] = useState(false)
 
     return (
-        <div className={`${raleway.className}fixed z-50 max-lg:fixed flex flex-col right-2 bottom-16 lg:h-fit lg:w-[25%] 2xl:w-[30%]`}>
+        <div className={`${raleway.className}fixed z-50 max-lg:fixed flex flex-col right-2 bottom-[18%] lg:h-fit lg:w-[25%] 2xl:w-[30%]`}>
             {
                 floatingButton && <div className="flex gap-6 lg:hidden flex-col">
                     <Link href={"https://docs.google.com/uc?export=download&id=17gITpRlSwimM7RQzmxL81dXckCBzEsuS"} className="flex self-center justify-self-center mt-4 items-center rounded-full gap-4">
@@ -35,21 +42,24 @@ export default function Profile() {
                     </Link>
                     <Link href="tel:+918390854549" className="p-3">
                         <FcPhone />
-                    </Link>                    
+                    </Link>
                     <Link href="mailto:aplunawat@gmail.com" className="p-3">
                         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="15" height="15" viewBox="0 0 48 48">
                             <path fill="#4caf50" d="M45,16.2l-5,2.75l-5,4.75L35,40h7c1.657,0,3-1.343,3-3V16.2z"></path><path fill="#1e88e5" d="M3,16.2l3.614,1.71L13,23.7V40H6c-1.657,0-3-1.343-3-3V16.2z"></path><polygon fill="#e53935" points="35,11.2 24,19.45 13,11.2 12,17 13,23.7 24,31.95 35,23.7 36,17"></polygon><path fill="#c62828" d="M3,12.298V16.2l10,7.5V11.2L9.876,8.859C9.132,8.301,8.228,8,7.298,8h0C4.924,8,3,9.924,3,12.298z"></path><path fill="#fbc02d" d="M45,12.298V16.2l-10,7.5V11.2l3.124-2.341C38.868,8.301,39.772,8,40.702,8h0 C43.076,8,45,9.924,45,12.298z"></path>
                         </svg>
-                    </Link>                    
+                    </Link>
                 </div>
             }
-            <button onClick={() => { setFloatingButton(!floatingButton) }} className="rounded-full lg:hidden fixed z-50 right-2 bottom-2 w-fit mt-auto  p-2 border-2">
+            <button onClick={() => { setFloatingButton(!floatingButton) }} className="rounded-full lg:hidden fixed z-50 right-2 bottom-[10%] w-fit mt-auto  p-2 border-2">
                 <AiOutlinePlus />
             </button>
             {/* <img src="./profile.jpg" className="justify-self-center max-lg:hidden absolute top-[12%] self-center rounded-xl w-[12%] h-[24%] 2xl:w-[14%] 2xl:h-[28%]" /> */}
             <div className="flex flex-col items-center justify-center rounded-lg max-lg:hidden bg-opacity-40 gap-2 overflow-hidden h-full p-4">
-                <div className={`flex mr-4 ml-4 text-center flex-col gap-2`}>
-                    <img src="./profile.jpg" className="rounded-full xl:w-[200px] xl:h-[200px]"/>
+                <div className={`flex mr-4 ml-4 text-center flex-col items-center justify-center gap-2`}>
+                    <img src="./profile.jpg" className="rounded-full xl:w-[200px] xl:h-[200px]" />
+                    <div className={`${pacifico.className} basis-1/2`}>
+                        <Link href={"/"} className='tracking-widest whitespace-pre font-normal lg:text-2xl text-md 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
+                    </div>
                     <span className={`font-medium ${raleway.className} text-center gap-4 text-[17px] 2xl:text-base`}>FullStack Developer</span>
                 </div>
                 <div className="flex flex-row gap-2 ml-4 2xl:gap-4">
