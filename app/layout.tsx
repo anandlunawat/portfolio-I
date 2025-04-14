@@ -39,11 +39,11 @@ export default function RootLayout({
           <Navbar />
           <div className='lg:flex max-md:h-full gap-4 lg:flex-row w-full'>
             <Profile />
-            <div className="max-h-screen w-full children pb-44 lg:max-h-[80vh] overflow-y-auto">
+            <div className="max-h-screen scroll-smooth w-full children pb-44 lg:max-h-[80vh] overflow-y-auto">
               {children}
-              <Projects />
-              <About />
-              <Resume />
+              <div id='projects'><Projects /></div>
+              <div id='about'><About /></div>
+              <div id='resume'><Resume /></div>
             </div>
           </div>
         </div>
