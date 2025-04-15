@@ -18,13 +18,13 @@ const raleway = Raleway({
 export default function About() {
     return (
         <div className="overflow-y-auto gap-3 min-w-full rounded-lg p-3 flex flex-col">
-            <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Education</span>
-            <div className="h-fit min-w-full max-md:w-fit">
-                <Timeline type={"education"}/>
-            </div>
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Experience</span>
             <div className="h-fit min-w-full">
-                <Timeline type={"experience"}/>
+                <Timeline type={"experience"} />
+            </div>
+            <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Education</span>
+            <div className="h-fit min-w-full max-md:w-fit">
+                <Timeline type={"education"} />
             </div>
         </div>
     )
