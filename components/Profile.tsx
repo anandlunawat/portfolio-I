@@ -56,7 +56,7 @@ export default function Profile() {
             {/* <img src="./profile.jpg" className="justify-self-center max-lg:hidden absolute top-[12%] self-center rounded-xl w-[12%] h-[24%] 2xl:w-[14%] 2xl:h-[28%]" /> */}
             <div className="flex flex-col items-center justify-center rounded-lg max-lg:hidden bg-opacity-40 gap-2 overflow-hidden h-full p-4">
                 <div className={`flex mr-4 ml-4 text-center flex-col items-center justify-center gap-2`}>
-                    <img src="./profile.jpg" className="rounded-full xl:w-[200px] xl:h-[200px]" />
+                    <img src="./profile.jpeg" className="rounded-full xl:w-[200px] xl:h-[200px] w-[100px] h-[100px]" />
                     <div className={`${pacifico.className} basis-1/2`}>
                         <Link href={"/"} className='tracking-widest whitespace-pre font-normal lg:text-2xl text-md 2xl:text-4xl basis-1/2'>Anand Lunawat</Link>
                     </div>

@@ -2,6 +2,9 @@ import {SiCplusplus, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTypescript, 
 import {BiLogoNetlify} from "react-icons/bi"
 import { DiJava } from 'react-icons/di'
 import { IconType } from 'react-icons';
+import { FaAngular } from "react-icons/fa6";
+import { SiKotlin } from "react-icons/si";
+import { SiJest } from "react-icons/si";
 
 const icons: IconType[] = [SiCplusplus, SiHtml5, SiJavascript, SiNextdotjs, SiReact, SiTypescript, SiCss3, SiBootstrap, SiChakraui, SiTailwindcss, SiNodedotjs, SiExpress, SiDjango, SiGithub, SiMysql, SiAdobephotoshop, SiFigma, DiJava, SiMysql, BiLogoNetlify];
 
@@ -11,10 +14,10 @@ const skills = [
         name : "C++" ,
         color : "#044F88"       
     },
-    // {
-    //     component : DiJava,
-    //     name : "Java"
-    // },
+    {
+        component : FaAngular,
+        name : "Angular"
+    },
     {
         component : SiHtml5,
         name : "HTML5",
@@ -35,10 +38,10 @@ const skills = [
         name : "Bootstrap",
         color : "#673AB7"
     },    
-    // {
-    //     component : SiChakraui,
-    //     name : "ChakraUI"
-    // },        
+    {
+        component : SiKotlin,
+        name : "Kotlin"
+    },        
     {
         component : SiJavascript,
         name : "JavaScript",
@@ -52,7 +55,6 @@ const skills = [
     {
         component : SiNextdotjs,
         name : "NextJs",
-        color : "#000000"
     },   
     {
         component : SiReact,
@@ -69,10 +71,11 @@ const skills = [
         name : "ExpressJs",
         color : "#000000"
     }, 
-    // {
-    //     component : SiDjango,
-    //     name : "Django"
-    // },  
+    {
+        component : SiJest,
+        name : "Jest",
+        color : "#ba0f20"
+    },  
     {
         component : SiMysql,
         name : "MySql",
@@ -81,7 +84,6 @@ const skills = [
     {
         component : SiGithub,
         name : "Github",
-        color : "#000000"
     },         
     {
         component : SiAdobephotoshop,
