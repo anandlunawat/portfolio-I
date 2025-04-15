@@ -13,14 +13,14 @@ export default function Timeline(props: prop) {
   return (
     <div className="relative min-w-full flex md:justify-center">
       <div className="absolute bg-black h-full rounded-full w-1 md:left-1/2 md:transform md:-translate-x-1/2"></div>
-      <div className="flex flex-col max-md:ml-3 gap-10 py-10 md:w-[80%]">
+      <div className="flex flex-col max-md:p-3 max-md:ml-3 min-w-full gap-10 py-10 md:w-[80%]">
         {props.type === "experience" ? experiences.map((experience, index) => (
           <div
             key={index}
             className={`relative w-full flex ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'
               }`}
           >
-            <div className="shadow-md flex flex-col gap-2 shadow-custom p-4 rounded-md md:max-w-[45%]">
+            <div className="shadow-md flex flex-col w-full gap-2 shadow-custom p-4 rounded-md md:max-w-[45%]">
               <div className="absolute left-1/2 transform -translate-x-1/2 rounded-full p-1"></div>
               <div className="font-bold md:text-lg text-xs items-center gap-2 md:gap-10 flex"><h1>{experience.companyName}</h1><span className="ml-auto"><FiExternalLink /></span></div>
               <h1 className="max-md:text-xs">{experience.role}</h1>
@@ -44,9 +44,9 @@ export default function Timeline(props: prop) {
               className={`w-full flex ${index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'
                 }`}
             >
-              <div className="shadow-md flex flex-col gap-2 shadow-custom p-4 rounded-md md:max-w-[45%]">
+              <div className="shadow-md w-full flex flex-col gap-2 shadow-custom p-4 rounded-md md:max-w-[45%]">
                 <div className="absolute -left-2 md:left-1/2 md:transform md:-translate-x-1/2 bg-white rounded-full p-1"><PiGraduationCap /></div>
-                <div className="font-bold text-lg items-center md:gap-10 gap-2 flex"><h1>{education.cardTitle}</h1><span className="ml-auto"><FiExternalLink /></span></div>
+                <div className="font-bold md:text-lg text-xs items-center md:gap-10 gap-2 flex"><h1>{education.cardTitle}</h1><span className="ml-auto"><FiExternalLink /></span></div>
                 <h1 className="max-md:text-xs font-medium">{education.cardSubtitle}</h1>
                 <h2 className="max-md:text-xs font-medium">{education.cardDetailedText}</h2>
               </div>
