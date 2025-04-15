@@ -20,7 +20,7 @@ html {
 
 .dark-mode {
   background: linear-gradient(to bottom left, #292136, #120e1c);
-  /* --shadow-color: #8c4af063; */
+  --shadow-color: #00000050;
   color: white
 }
 

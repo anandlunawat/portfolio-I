@@ -25,7 +25,7 @@ export default function Home() {
                     skills.map((skill,index) => {
                         const Component = skill.component;
                         return (
-                            <div key={index} className='flex flex-col rounded-lg shadow-xl h-24 p-4 items-center justify-center gap-2'>
+                            <div key={index} className='flex flex-col rounded-lg shadow-custom h-24 p-4 items-center justify-center gap-2'>
                                 <Component style={{color : skill.color}}/>
                                 <span className={`${raleway.className}`}>{skill.name}</span>                            
                             </div>
