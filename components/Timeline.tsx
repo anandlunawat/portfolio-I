@@ -12,47 +12,6 @@ interface prop {
 }
 
 export default function Timeline(props: prop) {
-
-  // return (
-  //   <Chrono
-  //     items={props.type === "experience" ? null : educationData}
-  //     mode="VERTICAL_ALTERNATING"
-  //     cardHeight={100}
-  //     // itemWidth={150}
-  //     slideItemDuration={2000}
-  //     slideShow
-  //     theme={{
-  //       cardBgColor: "#E1E8EF",
-  //       primary: "black",
-  //       secondary: "black",
-  //       titleColorActive: "#E1E8EF",
-  //       cardTitleColor: "#0072b1",
-  //       titleColor: "#0072b1"
-  //     }}
-  //     hideControls
-  //     useReadMore
-  //   >
-  //     {props.type === "experience" ? experiences.map((experience, index) => {
-  //       return (
-  //         <div key={index} className="VerticalItemWrapper-sc-1467v1d-1 uhss left vertical-item-row visible">
-  //           <div className="flex flex-col gap-4 ">
-  //             <p className="text-[#0072b1] flex items-center text-base font-semibold text-left">{experience.companyName}<Link href={experience.href} className="ml-auto"><FiExternalLink /></Link></p>
-  //             <p className="text-black text-sm font-semibold text-left">{experience.role}</p>
-  //             <p className="text-sm font-normal">{experience.para1}</p>
-  //             <p className="text-sm font-normal">{experience.para2}</p>
-  //             <div className="flex flex-row gap-4 text-sm font-normal">
-  //               {experience.techStacks.map((techStack, index) => {
-  //                 return (
-  //                   <div key={index} className=" rounded-lg p-2 ">{techStack}</div>
-  //                 )
-  //               })}
-  //             </div>
-  //           </div>
-  //         </div>
-  //       )
-  //     }) : <div className="chrono-icons"><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /><PiGraduationCap style={{ background: "white", color: "black", fontSize: "50px" }} /></div>}
-  //   </Chrono>
-  // )
   return (
     <div className="relative min-w-full flex justify-center">
       <div className="absolute bg-black h-full rounded-full w-1 left-1/2 transform -translate-x-1/2"></div>
@@ -69,7 +28,7 @@ export default function Timeline(props: prop) {
               <h1>{experience.role}</h1>
               <h2 className="font-medium">{experience.para1}</h2>
               <h2 className="font-medium">{experience.para2}</h2>
-              <div className="flex gap-2">
+              <div className="flex gap-2 font-medium text-lg">
                 {
                   experience.techStacks.map((techStack, index) => {
                     return (
