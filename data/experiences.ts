@@ -17,12 +17,6 @@ const experiences = [
         "techStacks" : ["ReactJS","ChakraUI"],
         "href" : "http://ledvan.in/anand/"
     },
-    // {
-    //     "title": "MAY 2018",
-    //     "cardTitle": "The Bishops Co-Ed School Kalyaninagar, Pune",
-    //     "cardSubtitle" : "10th Standard, ICSE",
-    //     "cardDetailedText": "Percentage: 87.7%",
-    // }
 ]
 
 export default experiences
