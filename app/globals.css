@@ -39,6 +39,13 @@ html {
   transition: box-shadow 0.3s ease;
 }
 
+.dark-mode .timeline-cards::before {
+  box-shadow:
+  0 4px 10px var(--shadow-color),
+  0 2px 4px var(--shadow-color);
+  background: linear-gradient(to bottom left, #292136, #120e1c);
+}
+
 .dark-mode .skills:hover {
   box-shadow: 1px 1px 2px 1px #8c4af0, 0px 1px 0px -6px #8c4af0;
 }
@@ -57,6 +64,13 @@ html {
 .light-mode ::selection {
   color: white;
   background-color: black;
+}
+
+.light-mode .timeline-cards::before {
+  box-shadow:
+  0 4px 10px var(--shadow-color),
+  0 2px 4px var(--shadow-color);
+  background: white;
 }
 
 .light-mode .skills {

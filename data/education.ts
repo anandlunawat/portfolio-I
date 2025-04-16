@@ -1,6 +1,6 @@
 const educationData = [
     {        
-        "title": "2020 - PRESENT",
+        "title": "2020 - 2024",
         "cardTitle": "Pune Institute of Computer Technology, Pune",
         "cardSubtitle" : "B.E. - Electronics and Telecommunication Engineering",
         "cardDetailedText": "Current CGPA: 8.78/10"
