@@ -3,8 +3,8 @@ const experiences = [
         "title": "Jan 2024 - Present",
         "companyName": "Bajaj Financial Services Ltd",
         "role" : "Software Engineer",
-        "para1": "• Modularized a monolithic Bajaj Finserv Angular app into microfrontends using Module Federation.",
-        "para2" : "• Developed a Kotlin-based feature for the Bajaj Finserv app that integrates with Google Assistant.",
+        "para1": "• Modularized a monolithic Bajaj Finserv Angular app using Module Federation.",
+        "para2" : "• Developed a Kotlin-based feature that integrates with Google Assistant.",
         "techStacks" : ["Angular","Kotlin"],
         "href" : ""
     },
@@ -13,7 +13,6 @@ const experiences = [
         "companyName": "Mastork Technologies",
         "role" : "Fullstack Developer Intern",
         "para1": "• Implemented a captivating React.js feature that showcased a dynamic component displaying elegant animations of food item names synchronized with their corresponding price fluctuations.",
-        "para2" : "• Demonstrated proficiency in building interactive modals and pages that enhance the overall User Experience and facilitate seamless navigation throughout the application.",
         "techStacks" : ["ReactJS","Tailwind"],
         "href" : ""
     },

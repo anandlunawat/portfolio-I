@@ -21,13 +21,13 @@ export default function Timeline(props: prop) {
               <div className="absolute left-1/2 transform -translate-x-1/2 rounded-full p-1"></div>
               <div className="font-bold md:text-lg text-xs items-center gap-2 md:gap-10 flex"><h1>{experience.companyName}</h1><span className="ml-auto"><FiExternalLink /></span></div>
               <h1 className="max-md:text-xs">{experience.role}</h1>
-              <h2 className="max-md:text-xs font-medium">{experience.para1}</h2>
-              <h2 className="max-md:text-xs font-medium">{experience.para2}</h2>
-              <div className="flex gap-2 font-medium text-lg">
+              <h2 className="max-md:text-xs max-md:font-normal">{experience.para1}</h2>
+              <h2 className="max-md:text-xs max-md:font-normal">{experience.para2}</h2>
+              <div className="flex gap-2">
                 {
                   experience.techStacks.map((techStack, index) => {
                     return (
-                      <span key={index}>{techStack}</span>
+                      <span className="font-medium max-md:text-xs" key={index}>{techStack}</span>
                     )
                   })
                 }
@@ -41,8 +41,8 @@ export default function Timeline(props: prop) {
               <div className={`relative basis-1/2 flex-col timeline-cards w-full gap-2 shadow-custom p-4 rounded-md md:max-w-[45%]
                 before:content-[''] before:absolute max-md:before:-left-2 before:top-[50%] ${index % 2 == 0 ? 'before:md:-left-2' : 'before:md:-right-2' } before:w-4 before:h-4 before:rotate-45 before:bg-inherit before:rounded-sm z-10`}>
                 <div className="font-bold md:text-lg text-xs items-center md:gap-10 gap-2 flex"><h1>{education.cardTitle}</h1><span className="ml-auto"><FiExternalLink /></span></div>
-                <h1 className="max-md:text-xs font-medium">{education.cardSubtitle}</h1>
-                <h2 className="max-md:text-xs font-medium">{education.cardDetailedText}</h2>
+                <h1 className="max-md:text-xs max-md:font-normal">{education.cardSubtitle}</h1>
+                <h2 className="max-md:text-xs max-md:font-normal">{education.cardDetailedText}</h2>
               </div>
               <div className={`basis-1/2 text-center self-center font-bold md:text-lg text-xs`}>{education.title}</div>
             </div>
