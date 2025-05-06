@@ -1,5 +1,13 @@
 const projects = [
     {
+        "imgUrl" : "./sqlStudio.png",
+        "title" : "SqlStudio",
+        "description" : "Built a browser-based SQL playground using WebAssembly and OPFS for client-side persistent query execution without backend dependency.",
+        "techStacks" : ["React","Vite","Tailwind"],
+        "repoLink" : "https://github.com/yellowflashofleaf/pulzion23",
+        "deployedLink" : "https://sqlstudio.netlify.app/"        
+    },
+    {
         "imgUrl" : "./pulzion.jpeg",
         "title" : "Pulzion website",
         "description" : "The primary focus of this website was to serve as a platform for showcasing events organized by PICT ACM Student Chapter and managing user registrations.Facilitated the registration of 2000+ participants, providing a seamless platform for event sign-ups.",
@@ -8,7 +16,7 @@ const projects = [
         "deployedLink" : "https://github.com/yellowflashofleaf/pulzion23"
     },
     {
-        "imgUrl" : "./virTrade.jpg",
+        "imgUrl" : "./virTrade.png",
         "title" : "VirTrade",
         "description" : "A Full-stack virtual trading platform enabling users to practice trading strategies with live stock prices for 10 stocks at a time. Utilized NextJS to drive the frontend of VirTrade, ensuring high-performance and scalable user interfaces. Implemented web sockets to seamlessly integrate Angel One’s smartapi for fetching live stock prices.",
         "techStacks" : ["Next Js","Tailwind","WebSocket","Node JS"],
