@@ -4,7 +4,7 @@ const projects = [
         "title" : "SqlStudio",
         "description" : "Built a browser-based SQL playground using WebAssembly and OPFS for client-side persistent query execution without backend dependency.",
         "techStacks" : ["React","Vite","Tailwind"],
-        "repoLink" : "https://github.com/yellowflashofleaf/pulzion23",
+        "repoLink" : "https://github.com/anandlunawat/sqlite-studio",
         "deployedLink" : "https://sqlstudio.netlify.app/"        
     },
     {
