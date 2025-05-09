@@ -18,7 +18,7 @@ export default function Home() {
     return (
         <div className="overflow-y-auto gap-3 rounded-lg p-3 flex flex-col">
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Bio</span>
-            <span className={`${raleway.className} text-lg font-medium`}>I am a Electronics and Telecommunication Engineering Undergraduate at Pune Institute of Computer Technology with a keen interest in the field of  Web Development, UI UX Development and Graphic Designing.</span>
+            <span className={`${raleway.className} text-lg font-medium`}>I’m a Software Engineer at Bajaj Finserv Ltd. with a background in Electronics and Telecommunication Engineering from Pune Institute of Computer Technology. My passion lies in crafting seamless digital experiences through Web Development, UI/UX Design, and Graphic Design. I enjoy blending creativity with code to build user-centric solutions that are both functional and visually appealing.</span>
             <span className={`text-[40px] text-center font-medium ${poppins.className}`}>Skills</span>
             <div className='grid grid-cols-7 gap-6 text-lg font-medium max-lg:grid-cols-4 max-md:grid-cols-2'>
                 {
